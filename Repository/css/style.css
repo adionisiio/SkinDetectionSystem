@@ -1,0 +1,53 @@
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header-image { /*line 16*/
+  position: relative;
+  height: 400px; /* Adjust the height according to your needs */
+  background: url('header.JPG') center/cover no-repeat; /* Replace 'your-image.jpg' with your image path */
+  display: flex;
+  align-items: center;
+  padding-left: 200px; /* Adjust the left padding according to your needs */
+  
+}
+
+.header-text { /*line 18*/
+  font-size: 3.5em; /* Adjust the font size according to your needs */
+  margin: 0;
+  color: #4e3519; /* Adjust the text color */
+  font-style: italic; /* Adjust the font style (optional) */
+  font-weight: bold; /* Adjust the font weight (optional) */
+}
+
+.section-part {
+  text-align: left;
+  margin: 0;
+}
+
+.section img {
+  width: 400px; /* Set the desired width of the image */
+  height: 600px; /* Maintain the aspect ratio */
+  
+}
+
+.section label {
+  display: inline-block;
+  padding: 10px 15px;
+  font-family: sans-serif; 
+  background-color: #4e3519; /* Set the background color of the button */
+  color: #fff; /* Set the text color of the button */
+  cursor: pointer;
+  margin-top: 10px; /* Adjust the top margin according to your needs */
+  margin-left: 130px;
+  border-radius: 10px; 
+}
+
+.section input[type="file"] {
+  display: none;
+}
+
+
+
