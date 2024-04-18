@@ -2,17 +2,19 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Updated font family */
 }
 
 /* Header */
 .header-image {
   position: relative;
-  height: 400px;
+  height: 700px; /* Adjust the height as needed */
   background: url('HEADER.png') center/cover no-repeat;
   display: flex;
   align-items: center;
-  padding-left: 200px;
+  box-sizing: border-box; /* Include padding in height calculation */
+  overflow: hidden; /* Hide any overflow content */
+  background-position: center -150px; /* Adjust the background position to cut off from the top */
 }
 
 .header-text {
@@ -33,13 +35,17 @@ body {
   width: 260px;
   height: 400px;
   padding-left: 10px;
-  ;
+}
+
+.section label,
+.section button,
+.navbar li a { /* Update font family for labels, buttons, and navigation links */
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .section label {
   display: inline-block;
   padding: 10px 15px;
-  font-family: sans-serif;
   background-color: #4e3519;
   color: #fff;
   cursor: pointer;
@@ -51,7 +57,6 @@ body {
 .section button {
   display: inline-block;
   padding: 10px 15px;
-  font-family: sans-serif;
   background-color: #9f1f06;
   color: #ffffff;
   cursor: pointer;
@@ -93,4 +98,29 @@ body {
 .navbar li a:hover {
   background-color: #e45c54;
   transform: scale(1.1);
+}
+
+/* About Us */
+.profiles {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.top-members,
+.bottom-members {
+  display: flex; /* Display members in a row */
+  justify-content: center; /* Center members horizontally */
+  gap: 20px; /* Spacing between members */
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 }
