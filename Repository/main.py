@@ -7,7 +7,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-# Load the pre-trained model
+# Load 
 model = load_model('RESNET50.h5')
 
 # Define constants
